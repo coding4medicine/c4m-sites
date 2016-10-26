@@ -6,11 +6,25 @@ class HspagesController < ApplicationController
 	layout 'hs', except: [:index]
 
 	def index
-		render layout: "hsfront"
+		#render layout: "hsfront"
+		render layout: "main"
 	end
 
 	def home
 	end
+
+  def objective
+  end
+
+  def instructions
+  end
+
+  def data
+  end
+
+  def examples
+  end
+
 
 	def page_protect
 		file_path = "#{Rails.root}/Materials/" + params[:url]

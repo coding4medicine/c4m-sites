@@ -69,5 +69,4 @@ config.action_mailer.smtp_settings = {
   config.relative_url_root = "/Members"
   config.action_controller.relative_url_root = "/Members"
 
-
 end

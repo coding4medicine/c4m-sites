@@ -6,11 +6,25 @@ class C4mpagesController < ApplicationController
 	layout 'c4m', except: [:index]
 
 	def index
-		render layout: "c4mfront"
+		#render layout: "c4mfront"
+		render layout: "main"
 	end
 
 	def home
 	end
+
+	def objective
+	end
+
+	def instructions
+	end
+
+	def data
+	end
+
+	def examples
+	end
+
 
 	def page_protect
 		file_path = "#{Rails.root}/Materials/" + params[:url]
