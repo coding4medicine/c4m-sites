@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+	resources :sshkeys
 	devise_for :users
 
 	# atgc.work

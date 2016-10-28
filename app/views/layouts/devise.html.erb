@@ -11,11 +11,9 @@
   <link rel="stylesheet" href="//coding4medicine.com/static/css/AdminLTE.min.css">
   <link rel="stylesheet" href="//coding4medicine.com/static/css/blue.css">
 <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-<body class="hold-transition login-page">
-<center>
 <%= yield %>
-</center>
 
 <script src="//coding4medicine.com/static/js/jquery-2.2.3.min.js"></script>
 <script src="//coding4medicine.com/static/js/bootstrap.min.js"></script>

@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Coding for Medicine</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
   <link rel="stylesheet" href="//coding4medicine.com/static/css/bootstrap.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="//coding4medicine.com/static/css/AdminLTE.min.css">
   <link rel="stylesheet" href="//coding4medicine.com/static/css/skin-red.min.css">
-<%= csrf_meta_tags %>
 </head>
-
-
 
 <body class="hold-transition skin-red sidebar-mini">
 <div class="wrapper">
@@ -22,7 +23,7 @@
       <header class="main-header">
     <a href="/Members/pages/home/" class="logo">
       <span class="logo-mini"><b>A</b>LT</span>
-      <span class="logo-lg">RNAseq</span>
+      <span class="logo-lg">Coding for Medicine</span>
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -54,7 +55,6 @@
     </nav>
   </header>
 
-
       <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -64,46 +64,12 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
 
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>RNAseq</span>
-            <i class="fa fa-angle-left pull-right"></i>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/Members/Materials/rnaseq/index.html" target="_blank"><i class="fa fa-circle-o"></i> Tutorial</a></li>
-            <li><a href="/Members/Materials/rnaseq/index.html" target="_blank"><i class="fa fa-circle-o"></i> Programs</a></li>
-          </ul>
         </li>
 
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>Assembly</span>
-            <i class="fa fa-angle-left pull-right"></i>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/Members/Materials/assembly/index.html" target="_blank"><i class="fa fa-circle-o"></i> Short read assembly</a></li>
-          </ul>
-        </li>
-
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>Programs</span>
-            <i class="fa fa-angle-left pull-right"></i>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="/Members/Materials/pandora/index.html" target="_blank"><i class="fa fa-circle-o"></i> Pandora's Toolbox</a></li>
-          </ul>
-        </li>
 
     </section>
     <!-- /.sidebar -->
   </aside>
-
-
-
 
 
 
@@ -117,7 +83,7 @@
 
       <h1>
         Coding for Medicine
-        <small>Enabling life scientists to code confidently</small>
+        <small>Enabling young life scientists to code confidently.</small>
       </h1>
     </section>
 
@@ -140,3 +106,4 @@
 
 </body>
 </html>
+

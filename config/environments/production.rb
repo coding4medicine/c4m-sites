@@ -84,7 +84,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-config.action_mailer.default_url_options = { :host => "www.coding4medicine.com:2124" }
+config.action_mailer.default_url_options = { :host => ENV['REG_EMAIL'] }
 
 config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",

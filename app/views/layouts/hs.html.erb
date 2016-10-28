@@ -6,19 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Coding for Medicine</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
   <link rel="stylesheet" href="//coding4medicine.com/static/css/bootstrap.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="//coding4medicine.com/static/css/AdminLTE.min.css">
   <link rel="stylesheet" href="//coding4medicine.com/static/css/skin-red.min.css">
-<%= csrf_meta_tags %>
 </head>
 
 <body class="hold-transition skin-red sidebar-mini">
 <div class="wrapper">
 
       <header class="main-header">
-    <a href="/pages/home/" class="logo">
+    <a href="/Members/pages/home/" class="logo">
       <span class="logo-mini"><b>A</b>LT</span>
       <span class="logo-lg">Coding for Medicine</span>
     </a>
@@ -68,9 +71,9 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/Members/Materials/linux/index.html"><i class="fa fa-circle-o"></i>Unix/linux tutorial</a></li>
-            <li><a href="/Members/Materials/github/index.html"><i class="fa fa-circle-o"></i>Github for sharing code</a></li>
-            <li><a href="/Members/Materials/regexp/index.html"><i class="fa fa-circle-o"></i>Regular expression</a></li>
+            <li><a href="/Members/Materials/linux/index.html" target="_blank"><i class="fa fa-circle-o"></i>Unix/linux tutorial</a></li>
+            <li><a href="/Members/Materials/github/index.html" target="_blank"><i class="fa fa-circle-o"></i>Github for sharing code</a></li>
+            <li><a href="/Members/Materials/regexp/index.html" target="_blank"><i class="fa fa-circle-o"></i>Regular expression</a></li>
           </ul>
         </li>
 
@@ -81,9 +84,9 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/Members/Materials/hspython1/index.html"><i class="fa fa-circle-o"></i>Python - get started</a></li>
-            <li><a href="/Members/Materials/hspython2/index.html"><i class="fa fa-circle-o"></i>Solve easy problems</a></li>
-            <li><a href="/Members/Materials/hspython3/index.html"><i class="fa fa-circle-o"></i>Python - more concepts</a></li>
+            <li><a href="/Members/Materials/hspython1/index.html" target="_blank"><i class="fa fa-circle-o"></i>Python - get started</a></li>
+            <li><a href="/Members/Materials/hspython2/index.html" target="_blank"><i class="fa fa-circle-o"></i>Solve easy problems</a></li>
+            <li><a href="/Members/Materials/hspython3/index.html" target="_blank"><i class="fa fa-circle-o"></i>Python - more concepts</a></li>
             <li><a href="/Members/Materials/hspython4/index.html"><i class="fa fa-circle-o"></i>Solve bioinformatics problems</a></li>
           </ul>
         </li>
@@ -96,7 +99,7 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/Members/Materials/hspython5/index.html"><i class="fa fa-circle-o"></i>Solve jigsaw puzzle</a></li>
+            <li><a href="/Members/Materials/hspython5/index.html" target="_blank"><i class="fa fa-circle-o"></i>Solve jigsaw puzzle</a></li>
           </ul>
         </li>
 
@@ -110,8 +113,8 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/Members/Materials/hs-blast/index.html"><i class="fa fa-circle-o"></i>BLAST</a></li>
-            <li><a href="/Members/Materials/hs-muscle/index.html"><i class="fa fa-circle-o"></i>MUSCLE</a></li>
+            <li><a href="/Members/Materials/hs-blast/index.html" target="_blank"><i class="fa fa-circle-o"></i>BLAST</a></li>
+            <li><a href="/Members/Materials/hs-muscle/index.html" target="_blank"><i class="fa fa-circle-o"></i>MUSCLE</a></li>
           </ul>
         </li>
 
@@ -122,15 +125,13 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/Members/Materials/hs-ncbi-blast/index.html"><i class="fa fa-circle-o"></i>NCBI BLAST</a></li>
-            <li><a href="/Members/Materials/hs-uniprot/index.html"><i class="fa fa-circle-o"></i>Uniprot</a></li>
-            <li><a href="/Members/Materials/hs-yeast/index.html"><i class="fa fa-circle-o"></i>Yeast database</a></li>
-            <li><a href="/Members/Materials/hs-ucsc/index.html"><i class="fa fa-circle-o"></i>UC Santa Cruz</a></li>
-            <li><a href="/Members/Materials/hs-ncbi/index.html"><i class="fa fa-circle-o"></i>NCBI</a></li>
+            <li><a href="/Members/Materials/hs-ncbi-blast/index.html" target="_blank"><i class="fa fa-circle-o"></i>NCBI BLAST</a></li>
+            <li><a href="/Members/Materials/hs-uniprot/index.html" target="_blank"><i class="fa fa-circle-o"></i>Uniprot</a></li>
+            <li><a href="/Members/Materials/hs-yeast/index.html" target="_blank"><i class="fa fa-circle-o"></i>Yeast database</a></li>
+            <li><a href="/Members/Materials/hs-ucsc/index.html" target="_blank"><i class="fa fa-circle-o"></i>UC Santa Cruz</a></li>
+            <li><a href="/Members/Materials/hs-ncbi/index.html" target="_blank"><i class="fa fa-circle-o"></i>NCBI</a></li>
           </ul>
         </li>
-
-    </section>
 
 
     </section>
