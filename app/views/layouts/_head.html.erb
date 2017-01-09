@@ -16,20 +16,23 @@
               <span class="hidden-xs">Account</span>
             </a>
             <ul class="dropdown-menu">
+                <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                <%= link_to 'Server login info', sshkeys_path %>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                <%= link_to 'Upload key', new_sshkey_path %>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                <%= link_to 'Change password', edit_user_registration_path %>
+                  </div>
+                </div>
+                </li>
+
               <!-- Menu Footer-->
               <li class="user-footer">
-                <div class="pull-left">
-		<%= link_to 'View server info', new_sshkey_path, :class=>"btn btn-default btn-flat" %>
-                </div>
-                <div class="pull-right">
-                <%= link_to 'Upload key', new_sshkey_path, :class=>"btn btn-default btn-flat" %>
-                </div>
-                <div class="pull-left">
-		<%= link_to 'Change password', edit_user_registration_path, :class=>"btn btn-default btn-flat" %>
-                </div>
-                <div class="pull-right">
-		<%= link_to 'sign out', destroy_user_session_path, method: :delete, :class=>"btn btn-default btn-flat" %>
-                </div>
+		<%= link_to 'sign out', destroy_user_session_path, method: :delete, :class=>"btn btn-elegant btn-round" %>
               </li>
             </ul>
           </li>

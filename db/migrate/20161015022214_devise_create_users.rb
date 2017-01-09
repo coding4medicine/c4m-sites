@@ -4,6 +4,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
       ## Stripe
       t.string :stripe_id
+      t.string :name, default: ""
+      t.integer :pay_status, default: 0
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""

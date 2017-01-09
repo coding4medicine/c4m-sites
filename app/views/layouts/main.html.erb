@@ -39,7 +39,7 @@
 			<i class="icon-remove menu-close"></i>
 			<a href="index.html" class="smoothScroll">Home</a>
 			<a href="/Members/pages/home/" class="smoothScroll">For members</a>
-			<a href="http://hs.coding4medicine.com:2124/" class="smoothScroll">High school</a>
+			<a href="<%= ENV['HS'] %>" class="smoothScroll">High school</a>
 			<a href="https://twitter.com/coding4medicine"><i class="icon-twitter"></i></a>
 		</div>
 		
@@ -82,6 +82,10 @@
 				<div class="col-lg-8 col-lg-offset-2">
 				<h3>Welcome to <bold>Coding4Medicine</bold>, the place online to be for high-quality bioinformatics education.
 				</h3>
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+
 				<%= yield %>
 				</div>
 			</div>
@@ -98,3 +102,4 @@
 	<script src="/assets/js/main.js"></script>
 </body>
 </html>
+

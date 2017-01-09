@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 	resources :sshkeys
-	devise_for :users
+	devise_for :users, :controllers => { registrations: 'registrations' }
 
 	# atgc.work
 	constraints domain: 'atgc.work' do

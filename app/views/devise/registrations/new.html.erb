@@ -11,6 +11,10 @@
   <%= devise_error_messages! %>
 
       <div class="form-group has-feedback">
+	<input autofocus="autofocus" type="name" class="form-control" placeholder="Name" value="" name="user[name]" id="user_name">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
 	<input autofocus="autofocus" type="email" class="form-control" placeholder="Email" value="" name="user[email]" id="user_email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
@@ -25,7 +29,7 @@
       <div class="row">
         <div class="col-xs-8">
             <label>
-              By clicking "Register", I agree to <a href="#">Terms.</a>
+              By clicking Register button, you agree to <a href="#">Terms.</a>
             </label>
         </div>
         <!-- /.col -->
@@ -34,6 +38,9 @@
         </div>
         <!-- /.col -->
       </div>
+            <label>
+            <font color=red>Check your email (incl. spam folder) after signing up.</font>
+            </label>
 <% end %>
 
 <%= render "devise/shared/links" %>
@@ -41,4 +48,5 @@
   <!-- /.form-box -->
 </div>
 <!-- /.register-box -->
+
 

@@ -5,10 +5,16 @@ class SshkeysController < ApplicationController
 
 	layout 'ssh'
 
-
 	# GET /sshkeys
 	def index
 		@sshkeys = current_user.sshkeys.all
+		@server_id=""
+		File.open("#{Rails.root}/names").each do |line|
+        		words=line.split(/\s+/)
+        		if words[0] == current_user.email
+                		@server_id=words[1]
+        		end
+		end
 	end
 
 	# GET /sshkeys/1

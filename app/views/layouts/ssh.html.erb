@@ -1,5 +1,4 @@
 <%= render "layouts/header", :locals => {:title => 'Upload ssh key'} %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 <div class="wrapper">
 <%= render "layouts/head", :locals => {:title => '>> Return to panel'} %>
 
@@ -25,12 +24,16 @@
 
       <h1>
         Coding for Medicine
-        <small>Enabling young life scientists to code confidently.</small>
+        <small>Enabling life scientists to code confidently.</small>
       </h1>
     </section>
 
     <!-- Main content -->
     <section class="content">
+
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
 
 <%= yield %>
 
